@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'dev.joven.secondlib'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "dev.joven.secondlib"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation files('libs/dev-tools-release.aar')
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.android.gms:play-services-ads:22.5.0'
+    implementation platform('com.google.firebase:firebase-bom:32.5.0')
+    implementation 'com.google.firebase:firebase-config'
+
+    implementation 'com.android.volley:volley:1.2.1'
+
+    implementation'com.appsflyer:af-android-sdk:6.12.4'
+    implementation'com.android.installreferrer:installreferrer:2.2'
+    implementation'com.alibaba:fastjson:2.0.42'
+}
