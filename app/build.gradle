@@ -48,4 +48,28 @@ dependencies {
     implementation'com.appsflyer:af-android-sdk:6.12.4'
     implementation'com.android.installreferrer:installreferrer:2.2'
     implementation'com.alibaba:fastjson:2.0.42'
+
+    // SDK Dependent Library SDKs
+    implementation 'com.google.android.gms:play-services-ads:22.5.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    implementation 'com.google.android.gms:play-services-appset:16.0.2'
+
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.alibaba:fastjson:2.0.42'
+    implementation 'com.facebook.android:facebook-android-sdk:16.2.0'
+    // In-App Notification
+    implementation 'com.pusher:pusher-java-client:2.4.2'
+    implementation 'com.pusher:push-notifications-android:1.9.0'
+
+    // AppsFlyer Integration
+    // Only add the following dependencies if will use AppsFlyer
+    //implementation 'com.appsflyer:af-android-sdk:6.12.4'
+    //implementation 'com.android.installreferrer:installreferrer:2.2'
+
+    // Adjust Integration
+    // Only add the following dependencies if will use Adjust
+    //implementation 'com.adjust.sdk:adjust-android:4.33.5'
+    // implementation 'com.adjust.sdk:adjust-android-webbridge:4.33.5'
+
 }
